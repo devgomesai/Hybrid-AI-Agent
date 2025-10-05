@@ -1,6 +1,6 @@
 # 🤖 Hybrid AI Agent
 
-Agentic knowledge retrieval redefined with an AI agent system that combines traditional RAG (vector search) with knowledge graph capabilities to analyze and provide insights about big tech companies and their AI initiatives. The system uses PostgreSQL with pgvector for semantic search and Neo4j with Graphiti for temporal knowledge graphs. The goal is to create Agentic RAG at its finest.
+Agentic knowledge retrieval redefined with an AI agent system that combines traditional RAG (vector search) with knowledge graph capabilities to analyze and Web Search Capabilities. The system uses PostgreSQL with pgvector for storing (vector db) and Neo4j with Graphiti for  knowledge graphs and Perplexity AI for web search.
 
 ***
 
@@ -127,7 +127,6 @@ Add your markdown files about tech companies and AI research to the `documents/`
 - `documents/google_ai_initiatives.md`  
 - `documents/microsoft_openai_partnership.md`  
 
-You may also copy the provided `big_tech_docs` folder for a richer dataset:  
 
 ```bash
 cp -r big_tech_docs/* documents/
