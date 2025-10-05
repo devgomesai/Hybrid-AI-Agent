@@ -251,16 +251,6 @@ agentic-rag-knowledge-graph/
 - **Agent Returning No Results**: Run ingestion first  
 - **LLM API Issues**: Check `.env` values  
 - **Knowledge Graph Token Issues**: Large documents are automatically truncated  
-
-***
-
-## Testing
-
-```bash
-pytest
-pytest --cov=agent --cov=ingestion --cov-report=html
-```
-
 ***
 
 ## Available Agent Tools
@@ -273,7 +263,7 @@ pytest --cov=agent --cov=ingestion --cov-report=html
 
 ## Key Features
 
-- Hybrid Search combining vectors + graphs  
+- Hybrid Search combining vectors + graphs + web 
 - Temporal Knowledge Graphs (via Graphiti)  
 - Real-time Web Search with Perplexity AI  
 - Streaming Responses with Server-Sent Events  
