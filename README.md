@@ -12,7 +12,6 @@ Agentic knowledge retrieval redefined with an AI agent system that combines trad
 - Neo4j for the Knowledge Graph Engine (Graphiti connects to this)  
 - FastAPI for the Agent API  
 - Perplexity AI for Web Search Integration  
-- Claude Code for the AI Coding Assistant (See CLAUDE.md, PLANNING.md, and TASK.md)  
 
 ***
 
