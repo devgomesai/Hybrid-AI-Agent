@@ -1,6 +1,6 @@
 # 🤖 Hybrid AI Agent
 
-Agentic knowledge retrieval redefined with an AI agent system that combines traditional RAG (vector search) with knowledge graph capabilities to analyze and provide insights about big tech companies and their AI initiatives. The system uses PostgreSQL with pgvector for semantic search and Neo4j with Graphiti for temporal knowledge graphs. The goal is to create Agentic RAG at its finest.
+Agentic knowledge retrieval redefined with an AI agent system that combines traditional RAG (vector search) with knowledge graph capabilities to analyze and Web Search Capabilities. The system uses PostgreSQL with pgvector for storing (vector db) and Neo4j with Graphiti for  knowledge graphs and Perplexity AI for web search.
 
 ***
 
@@ -12,7 +12,6 @@ Agentic knowledge retrieval redefined with an AI agent system that combines trad
 - Neo4j for the Knowledge Graph Engine (Graphiti connects to this)  
 - FastAPI for the Agent API  
 - Perplexity AI for Web Search Integration  
-- Claude Code for the AI Coding Assistant (See CLAUDE.md, PLANNING.md, and TASK.md)  
 
 ***
 
@@ -127,7 +126,6 @@ Add your markdown files about tech companies and AI research to the `documents/`
 - `documents/google_ai_initiatives.md`  
 - `documents/microsoft_openai_partnership.md`  
 
-You may also copy the provided `big_tech_docs` folder for a richer dataset:  
 
 ```bash
 cp -r big_tech_docs/* documents/
@@ -252,16 +250,6 @@ agentic-rag-knowledge-graph/
 - **Agent Returning No Results**: Run ingestion first  
 - **LLM API Issues**: Check `.env` values  
 - **Knowledge Graph Token Issues**: Large documents are automatically truncated  
-
-***
-
-## Testing
-
-```bash
-pytest
-pytest --cov=agent --cov=ingestion --cov-report=html
-```
-
 ***
 
 ## Available Agent Tools
@@ -274,7 +262,7 @@ pytest --cov=agent --cov=ingestion --cov-report=html
 
 ## Key Features
 
-- Hybrid Search combining vectors + graphs  
+- Hybrid Search combining vectors + graphs + web 
 - Temporal Knowledge Graphs (via Graphiti)  
 - Real-time Web Search with Perplexity AI  
 - Streaming Responses with Server-Sent Events  

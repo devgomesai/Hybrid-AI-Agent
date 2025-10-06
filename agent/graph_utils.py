@@ -44,7 +44,7 @@ class GraphitiClient:
         # Neo4j configuration
         self.neo4j_uri = neo4j_uri or os.getenv("NEO4J_URI", "neo4j://127.0.0.1:7687")
         self.neo4j_user = neo4j_user or os.getenv("NEO4J_USER", "neo4j")
-        self.neo4j_password = neo4j_password or os.getenv("NEO4J_PASSWORD", "Mphasis123")
+        self.neo4j_password = neo4j_password or os.getenv("NEO4J_PASSWORD", "")
         
         if not self.neo4j_password:
             raise ValueError("NEO4J_PASSWORD environment variable not set")
