@@ -121,15 +121,10 @@ For other LLM providers, see examples in the original description.
 mkdir -p documents
 ```
 
-Add your markdown files about tech companies and AI research to the `documents/` directory. Example:  
+Add your markdown files to the `documents/` directory. Example:  
 
-- `documents/google_ai_initiatives.md`  
-- `documents/microsoft_openai_partnership.md`  
-
-
-```bash
-cp -r big_tech_docs/* documents/
-```
+- `documents/perosonal_data.md`  
+- `documents/data_claude.md`  
 
 ### 2. Run Document Ingestion
 
