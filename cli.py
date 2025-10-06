@@ -39,9 +39,9 @@ class AgenticRAGCLI:
         
     def print_banner(self):
         """Print welcome banner."""
-        print(f"\n{Colors.CYAN}{Colors.BOLD}=" * 60)
-        print("🤖 Agentic RAG with Knowledge Graph CLI")
-        print("=" * 60)
+        print(f"{Colors.CYAN}{Colors.BOLD}=" * 60)
+        print(f"{Colors.WHITE}{Colors.BOLD}🤖 Agentic RAG with Knowledge Graph CLI")
+        print(f"{Colors.CYAN}{Colors.BOLD}=" * 60)
         print(f"{Colors.WHITE}Connected to: {self.base_url}")
         print(f"Type 'exit', 'quit', or Ctrl+C to exit")
         print(f"Type 'help' for commands")
@@ -203,7 +203,7 @@ class AgenticRAGCLI:
             print(f"{Colors.RED}Cannot connect to API. Please ensure the server is running.{Colors.END}")
             return
         
-        print(f"{Colors.GREEN}Ready to chat! Ask me about tech companies and AI initiatives.{Colors.END}\n")
+        print(f"{Colors.GREEN}Ready to chat! Ask me about docs you just ingested.{Colors.END}\n")
         
         try:
             while True:
