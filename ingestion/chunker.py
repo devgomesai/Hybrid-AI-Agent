@@ -503,8 +503,8 @@ async def main():
     
     chunks = await chunker.chunk_document(
         content=sample_text,
-        title="Big Tech AI Report",
-        source="example.md"
+        title="AI-Rag",
+        source="main.md"
     )
     
     for i, chunk in enumerate(chunks):

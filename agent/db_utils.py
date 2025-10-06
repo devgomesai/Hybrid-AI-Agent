@@ -10,12 +10,11 @@ from datetime import datetime, timedelta, timezone
 from contextlib import asynccontextmanager
 from uuid import UUID
 import logging
-
 import asyncpg
 from asyncpg.pool import Pool
 from dotenv import load_dotenv
 
-# Load environment variables
+# Load environment variables    
 load_dotenv()
 
 logger = logging.getLogger(__name__)
